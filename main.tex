@@ -1,88 +1,65 @@
 \documentclass{uhphyspaper} 
-\usepackage{lipsum} % just for the demo, may be removed
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       START DOCUMENT       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{lipsum} % For demo purposes, remove 
 
 % Titles
 \title{Title (bold)*}
-
 \runningtitle{*Running title: \textit{Short title ($\mathit{< 50}$ characters inc. spaces, italic, leave empty if not needed)}}
+\keywords{list at least five keywords, separated by commas}
+
+% Course information
 \bachyear{$\mathit{3^{e}}$}
 \course{Bachelorproef}
 \date{\today}
 
-% Authors and affiliations
-\author[1]{Student Name} % First author
-\author[2]{Supervisor name} % Supervisors
+% Authors, supervisors, principle investigator (PI, promotor)
+\author[1]{Student Name}
+\author[2]{Supervisor name}
 \author[3]{Second supervisor}
-\author[4*]{Principle Investigator} % Promotor
+\author[4$^{\dagger}$]{Principle Investigator} % Promotor: Dagger here signifies that the PI is the main correspondent
+
+% Author affiliations
 \affil[1]{UHasselt, Agoralaan, 3590 Diepenbeek, Belgium}
 \affil[2, 3]{Specify Group}
-\affil[1,4*]{UHasselt, ResearchGroup, Agoralaan, 3590 Diepenbeek, Belgium}
+\affil[1,4$^{\dagger}$]{UHasselt, ResearchGroup, Agoralaan, 3590 Diepenbeek, Belgium} % Dagger here signifies that the PI is the main correspondent
 
-% PI contact info
+% PI contact info, do not remove
 \pitel{+32 (11) 11 11 11}
 \pimail{PImail@uhasselt.be}
 
 
-% START DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       START DOCUMENT       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \maketitle\thispagestyle{fancy} % pagestyle ensures header is present
 
+% Papers are typically written in two columns to optimally make use of the page
 \begin{multicols}{2}
 
-\section*{ABSTRACT}
-\textbf{Abstract tekst mag hier vetgedrukt, $\mathbf{< 250}$ woorden. 
-Hier is voorbeeldtekst: \lipsum[1-1]}
+% Each section is placed in a separate file to better organise your text
+% You can find these files in the Sections folder
+\input{Sections/0-ABSTRACT}
 \newline
 \rule[1.5ex]{\linewidth}{0.4pt}
 
-\section{INTRODUCTION}
-Leid je project in, background, doel \& onderzoeksvragen, \dots 
-Zorg voor voldoende referenties zoals \cite{knuth:1984} \cite{latex2e}(Endnote/Mendeley/Zotero).
+\input{Sections/1-INTRODUCTION}
+\input{Sections/2-THEORY} % May be removed if unnecessary
+\input{Sections/3-EXPERIMENTAL} % May be removed if unnecessary
+\input{Sections/4-RESULTS}
+\input{Sections/5-DISCUSSION}
+\input{Sections/6-CONCLUSIONS}
 
-\section{THEORY (optional)}
-Tussentitels zijn aangeraden per onderdeel (2.1, 2.2, \dots).
-Zijn er essentiele stukken theorie die noodzakelijk zijn om je verslag te begrijpen?
-
-\section{EXPERIMENTAL PROCEDURES}
-Tussentitels per techniek (3.1, 3.2, \dots).
-Welke technieken zijn er gebruikt?
-Zorg dat je onderzoek repliceerbaar is (maar zonder overbodige details).
-
-\section{RESULTS}
-Tussentitels per topic/techniek (4.1, 4.1.1, \dots).
-Beschrijf de resultaten (interpreteer ze nog niet), wat zie je (objectief)?
-Zorg dat figuren een caption hebben (incl. alle afkortingen) onder de figuur en dat je zeker in de tekst refereert naar desbetreffende figuur. 
-Tabellen krijgen een caption bovenaan (zelfde principe).
-
-\section{DISCUSSION}
-Tussentitels aangeraden.
-Beschrijf welke conclusies er getrokken kunnen worden uit je resultaten. 
-Leg linken (zowel tussen je eigen resultaten als dingen die je vindt in de literatuur).
-\npar
-Ook hier is extra voorbeeldtext: \lipsum[1-1]
-
-\section{CONCLUSION}
-Kort en bondig, wat leren we hier uit? 
-Wat is de outlook?
-
+% Additional sections for acknowledgments
 \rule{\linewidth}{0.4pt}
-\textit{Author contributions} -- \textbf{Who did what?} 
-JH and JdR conceived and designed the research. 
-JH and BvH performed experiments and data analysis. 
-EvS and DD provided assistance with FLIM-FRET. JH and JdR wrote the paper. 
-All authors carefully edited the manuscript.
-
-\textit{Acknowledgements} -- \textbf{Who helped you? Who do you want to thank.} 
-F.E. BvH acknowledges the agency for Innovation by Science and Technology (IWT Flanders) for his doctoral fellowship. 
-JH is grateful for a postdoctoral scholarship from the Research Foundation Flanders (FWO Vlaanderen). 
-Prof. Em. Yves Engelborghs is thanked for providing access to the confocal microscope. 
-Research was funded by grants from the BOF KU Leuven, FWO, and EU (FP7 CHAARM).
+\input{Sections/7-ACKNOWLEDGEMENTS}
 
 \end{multicols}
 
+% The bibliography is added at the end of the paper in a single column
 \vspace{0.5cm}
 \printbibliography[title={REFERENCES}]
-\newpage
-
 
 \end{document}
