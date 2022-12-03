@@ -17,11 +17,12 @@
 \RequirePackage[margin={1in, 0.5in}, includeheadfoot, paperwidth=210mm, paperheight=297mm]{geometry}
 \RequirePackage{titlesec} % to add a dot after section number
 \RequirePackage{fancyhdr} % easy header and footer
-\RequirePackage{mathptmx} % Times New Roman font
+% \RequirePackage{mathptmx} % Times New Roman font
 \RequirePackage{titlecaps}% http://ctan.org/pkg/titlecaps
 \RequirePackage{parskip} % blank space (single line) between paragraphs
 \RequirePackage{setspace} % for setstretch command (line spacing)
 \RequirePackage{multicol} % to enable easy switching between nr of cols
+% \RequirePackage[default,oldstyle,scale=0.95]{opensans} % Open Sans font is easier to read
 
 % Good defaults to have
 \RequirePackage{graphicx} % import images
