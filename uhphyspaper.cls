@@ -49,6 +49,8 @@
 \newcommand*{\pitel}[1]{\gdef\thepitel{#1}}
 \newcommand*{\keywords}[1]{\gdef\thekeywords{#1}}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Definition of the header %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,6 +95,10 @@
 \newcommand{\npar}{\par\medskip} 
 
 \addbibresource{references.bib}
+
+% Automatically apply 'H' to new figures
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       Title Header       %
