@@ -7,6 +7,9 @@ Using this template you will be able to write a report of your bachelor project 
 Click on the green 'code' button and select 'Download ZIP'.
 Unzip to use locally or upload as is to use with overleaf.
 
+# Notes
+This template is built on multicols meaning floats are not compatible. As a workaround use the 'H' position specifier in a table or figure environment.
+
 # Not Physics?
 
 Feel free to use it as a student of another faculty but know that you might need tweaks to the template.
