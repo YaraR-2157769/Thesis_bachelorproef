@@ -27,6 +27,7 @@
 % Good defaults to have
 \RequirePackage{graphicx} % import images
 \RequirePackage{authblk} % nultiple authors
+\RequirePackage{float}
 
 % Math and physics packages ... you will need them
 \RequirePackage{amsmath}
