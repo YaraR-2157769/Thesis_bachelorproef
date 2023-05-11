@@ -34,7 +34,7 @@
 \RequirePackage{physics}
 
 % References and links (these should be last and in this order)
-\RequirePackage{biblatex}
+\RequirePackage[sorting=none,style=numeric]{biblatex}
 \RequirePackage{csquotes}
 \RequirePackage[colorlinks=true, linktoc=all]{hyperref}
 \RequirePackage[noabbrev,dutch]{cleveref}
