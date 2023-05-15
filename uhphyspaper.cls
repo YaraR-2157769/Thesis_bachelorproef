@@ -35,6 +35,7 @@
 
 % References and links (these should be last and in this order)
 \RequirePackage[sorting=none,style=numeric]{biblatex}
+\RequirePackage{xurl} % Allows links to break anywhere. See: https://tex.stackexchange.com/a/407368
 \RequirePackage{csquotes}
 \RequirePackage[colorlinks=true, linktoc=all]{hyperref}
 \RequirePackage[noabbrev,dutch]{cleveref}
