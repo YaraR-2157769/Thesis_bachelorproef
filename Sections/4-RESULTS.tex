@@ -14,6 +14,16 @@ Willen jullie resultaten tonen zoals figuren dan dienen jullie de \textit{figure
     \label{fig:pikachu}
 \end{figure}
 
+Je kan naar een figuur refereren met \lstinline!\cref{fig:pikachu}! door een label te plaatsen in je figure environment: \lstinline!\label{fig:pikachu}!.
+Voor grote afbeeldingen kun je \textit{figure*} gebruiken zoals \cref{fig:konijnen}, daar mogen de gewoonlijke position parameters gebruikt worden.
+
+\begin{figure*}[!htpb]
+    \centering
+    \includegraphics{Figures/Enderby_Island_Rabbit_Lineup.jpg}
+    \caption{Dit is een veel te grote figuur. Konijnen zijn belangrijk en moeten de hele pagina innemen.}
+    \label{fig:konijnen}
+\end{figure*}
+
 Tabellen moeten in de \textit{table} environment geplaatst worden.
 Ook hier is de 'H' parameter cruciaal.
 Gebruik \url{https://www.tablesgenerator.com/} voor hulp bij de opmaak van tabellen.
