@@ -11,7 +11,7 @@
 \LoadClass[11pt, a4paper,twocolumn]{article}
 
 %% Language package
-\RequirePackage[english]{babel}
+\RequirePackage[dutch]{babel}
 
 % Aesthetics, layout and font
 \RequirePackage[margin={1in, 1in}, includeheadfoot, paperwidth=210mm, paperheight=297mm]{geometry}
