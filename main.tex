@@ -4,12 +4,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{lipsum} % For demo purposes, remove 
 \usepackage{listings} % Provides \lstinline{} for demo, remove
-
+\usepackage{subcaption}
 
 % Titles
-\title{Gravitationele Lensen}
-\runningtitle{*Running title: \textit{Short title ($\mathit{< 50}$ characters inc. spaces, italic, leave empty if not needed)}}
-\keywords{list at least five keywords, separated by commas}
+\title{Ontsluieren van kleine, centrale beelden in gravitationele lenzen}
+\runningtitle{}
+\keywords{gravitationele lenzing, astrofysica, computationele fysica, Bayesiaanse statistiek, Monte-Carlo Markov Chain}
 
 % Course information
 \bachyear{$\mathit{3^{e}}$}
@@ -18,23 +18,23 @@
 
 % Authors, supervisors, principle investigator (PI, promotor)
 \author[1]{Yara Roelen}
-\author[4$^{\dagger}$]{Jori Liesenborgs} % Promotor: Dagger here signifies that the PI is the main correspondent
+\author[1$^{\dagger}$]{Jori Liesenborgs} % Promotor: Dagger here signifies that the PI is the main correspondent
 
 % Author affiliations
-\affil[1]{UHasselt, Agoralaan, 3590 Diepenbeek, Belgium}
-\affil[2, 3]{Computational Sciences}
-\affil[1,4$^{\dagger}$]{UHasselt, EDM, Agoralaan, 3590 Diepenbeek, Belgium} % Dagger here signifies that the PI is the main correspondent
+\affil[1]{UHasselt, Agoralaan, 3590 Diepenbeek, België}
+\affil[1]{Applied Computer Science Lab}
+\affil[1$^{\dagger}$]{UHasselt, EDM, Agoralaan, 3590 Diepenbeek, België} % Dagger here signifies that the PI is the main correspondent
 
 % PI contact info, do not remove
-\pitel{+32 (11) 11 11 11}
-\pimail{PImail@uhasselt.be}
-
+\pitel{+3211268429}
+\pimail{jori.liesenborgs@uhasselt.be}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       START DOCUMENT       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\maketitle\thispagestyle{fancy} % pagestyle ensures header is present
+\maketitle\thispagestyle{fancy} 
+% pagestyle ensures header is present
 
 % Each section is placed in a separate file to better organise your text
 % You can find these files in the Sections folder
@@ -46,15 +46,15 @@
 \input{Sections/2-THEORY} % May be removed if unnecessary
 \input{Sections/3-EXPERIMENTAL} % May be removed if unnecessary
 \input{Sections/4-RESULTS}
-\input{Sections/5-DISCUSSION}
 \input{Sections/6-CONCLUSIONS}
 
 % Additional sections for acknowledgments
 \rule{\linewidth}{0.4pt}
 \input{Sections/7-ACKNOWLEDGEMENTS}
-
+\input{Sections/8-APPENDIX}
 % The bibliography is added at the end of the paper in a single column
-\vspace{0.5cm}
+\newpage
+\twocolumn
 \printbibliography[title={REFERENCES}]
 
 \end{document}
